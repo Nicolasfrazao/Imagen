@@ -52,6 +52,7 @@ const TransformedImage = ({ image, type, title, transformationConfig, isTransfor
             placeholder={dataUrl as PlaceholderValue}
             className="transformed-image"
             onLoad={() => {
+              /* eslint-disable */
               setIsTransforming && setIsTransforming(false);
             }}
             onError={() => {
